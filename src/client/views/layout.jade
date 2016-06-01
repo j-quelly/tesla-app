@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    title Design Studio | Tesla Motors
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0')
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:600,400,300', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='/css/app.css')
+  body.container
+
+    header
+      .s-3.m-3.l-2.logo
+        img(src="images/tesla_logo.png", alt="Tesla Motors")
+      .s-9.m-8.heading
+        h1 Design Studio
+
+    block content     
+
+    footer
+      .s-offset-2.s-10.m-10.l-8
+        p.disclaimer
+
+    script(id="option-template", type="text/template")
+      .s-offset-2.s-8.m-8.l-6
+        .checkbox
+          span.checkbox__check &#10003;
+        p.name 
+      .s-3.m-2.l-2
+        p.price            
+      .clear      
+    script(src='js/app.js')
+    script(src='//localhost:35729/livereload.js')   

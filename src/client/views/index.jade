@@ -1,0 +1,40 @@
+extends layout
+
+block content
+  main
+    .row
+      .s-offset-2.s-8.m-8.l-6
+        h2 Base
+      .s-3.m-2.l-2
+        p.base-price $1000
+
+    .row
+      .s-offset-2.s-8.m-8.l-6
+        h2 Inspect Prep
+      .s-3.m-2.l-2
+        p.inspect-prep-price $180      
+
+    .row
+      .s-offset-2.s-8.m-8.l-6.no-padding-bottom
+        h2 Options
+      .s-3.m-3.l-2.no-padding-bottom
+        a#price-toggle(href="javascript:;") Hide Prices
+
+    .row
+      ul.options                   
+
+    .row
+      .s-offset-2.s-8.m-8.l-6
+        h2 Personal Delivery
+      .s-3.m-2.l-2
+        p.delivery-price $990
+
+    .row
+      .s-offset-1.s-10
+        hr
+
+    .row
+      .s-offset-2.s-8.m-8.l-6
+        h2.total Total
+      .s-3.m-2.l-2
+        p.total-price $9000

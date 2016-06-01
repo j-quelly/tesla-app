@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  main
+    .row  
+      .s-offset-2.s-8
+        h1= message
+        h2= error.status
+        pre #{error.stack}        

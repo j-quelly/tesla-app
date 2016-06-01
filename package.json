@@ -1,0 +1,42 @@
+{
+  "name": "tesla-test",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./src/server/bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "express": "~4.13.1",
+    "jade": "~1.11.0",
+    "lodash": "^4.9.0",
+    "morgan": "~1.6.1",
+    "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "colors": "^1.1.2",
+    "del": "^2.2.0",
+    "grunt": "^1.0.1",
+    "grunt-available-tasks": "^0.6.1",
+    "grunt-concurrent": "^2.2.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-imagemin": "^1.0.0",
+    "grunt-contrib-jade": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-nodemon": "^0.4.1",
+    "grunt-postcss": "^0.8.0",
+    "grunt-sass": "^1.1.0",
+    "grunt-string-replace": "^1.2.1",
+    "grunt-uncss": "^0.5.0",
+    "load-grunt-tasks": "^3.4.1",
+    "open": "0.0.5",
+    "pixrem": "^3.0.0",
+    "time-grunt": "^1.3.0"
+  }
+}

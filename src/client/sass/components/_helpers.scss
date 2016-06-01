@@ -1,0 +1,311 @@
+/* jshint ignore:start */
+
+
+/* 4. Helpers
+ * - helper classes to simplify development
+ * - 10/07/2015 have removed all instances of !important for "better practice" 
+ *   and will have to test the classes throughout development
+ */
+
+.alert {
+    font-family: inherit;
+    border: 1px solid transparent;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.alert-success {
+    background-color: #DFF0D8;
+    border-color: #D6E9C6;
+    color: #468847;
+}
+
+.alert-success b,
+.alert-success strong {
+    color: #468847;
+}
+
+.alert-error {
+    background-color: #F2DEDE;
+    border-color: #EED3D7;
+    color: #B94A48;
+}
+
+.alert-error .alert-link {
+    color: #953B39;
+}
+
+.alert .alert-link {
+    font-weight: bold;
+}
+
+.alert-error b,
+.alert-error strong {
+    color: #B94A48;
+}
+
+.alert p {
+    margin-bottom: 0;
+}
+
+.alert-info {
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+    color: #31708f;
+}
+
+.alert-warning {
+    background-color: #00B0E0;
+    border-color: #00B0E0;
+    color: #8a6d3b;
+}
+
+.bg {
+    background: #CCC;
+    -webkit-box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.66);
+    box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.66);
+}
+
+.block {
+    display: block;
+}
+
+.relative {
+    position: relative;
+}
+
+.no-border {
+    border: none;
+}
+
+.red {
+    border: solid 1px red;
+}
+
+.remove-filters {
+    border: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.no-margin-top {
+    margin-top: 0;
+}
+
+.no-margin-right {
+    margin-right: 0;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+
+.no-margin-left {
+    margin-left: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.no-padding-top {
+    padding-top: 0;
+}
+
+.no-padding-right {
+    padding-right: 0;
+}
+
+.no-padding-bottom {
+    padding-bottom: 0;
+}
+
+.no-padding-left {
+    padding-left: 0;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.last {
+    margin-right: 0;
+}
+
+.no-float {
+    float: none;
+}
+
+.clear {
+    clear: both;
+}
+
+.hide {
+    display: none;
+}
+
+.hide-desktop {
+    display: none;
+}
+
+.hide-tablet {
+    display: block;
+}
+
+.hide-sml-tablet {
+    display: block;
+}
+
+.hide-mobile {
+    display: block;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.h140 {
+    height: 140px;
+}
+
+.show-tablet {
+    display: none;
+}
+
+.show-sml-tablet {
+    display: none;
+}
+
+.show-mobile {
+    display: none;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none;
+}
+
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+
+/*
+ * Clearfix: contain floats 
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/* jshint ignore:end */

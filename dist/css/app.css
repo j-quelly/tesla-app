@@ -1,0 +1,673 @@
+/*** uncss> filename: https://fonts.googleapis.com/css?family=Open+Sans:600,400,300 ***/
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTYnF5uFdDttMLvmWuJdhhgs.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3aCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSonF5uFdDttMLvmWuJdhhgs.ttf) format('truetype');
+}
+
+/*** uncss> filename: dist/css/app.css ***/
+
+/* jshint ignore:start */
+
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+
+html {
+  font-family: sans-serif;
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+footer,
+header,
+main {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+/* jshint ignore:end */
+
+/* jshint ignore:start */
+
+/* 2. Grid system:      
+ * - basic grid system definitions 
+ * - (test media queries, try and remove !important)
+ */
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+[class*='s-'],
+[class*='m-'],
+[class*='l-'] {
+  float: left;
+  padding: 2%;
+}
+
+.row {
+  clear: both;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  min-width: 320px;
+  max-width: 1024px;
+  background: #fff;
+  border: solid 1px #dddfe2;
+  border-top: none;
+  position: relative;
+}
+
+/* clearfix */
+
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*
+ *
+ * basic grid definition 
+ *
+ */
+
+/* mobile */
+
+.s-3 {
+  width: 25%;
+}
+
+.s-8 {
+  width: 66.66%;
+}
+
+.s-9 {
+  width: 75%;
+}
+
+.s-10 {
+  width: 83.34%;
+}
+
+.s-offset-1 {
+  margin-left: 8.33%;
+}
+
+.s-offset-2 {
+  margin-left: 16.66%;
+}
+
+/* phablet */
+
+.m-2 {
+  width: 16.66%;
+}
+
+.m-3 {
+  width: 25%;
+}
+
+.m-8 {
+  width: 66.66%;
+}
+
+.m-10 {
+  width: 83.34%;
+}
+
+/* tablet */
+
+.l-2 {
+  width: 16.66%;
+}
+
+.l-6 {
+  width: 50%;
+}
+
+.l-8 {
+  width: 66.66%;
+}
+
+/* desktop */
+
+/* Responsive styles                    
+ * - responsive style definitions 
+ */
+
+/* responsive images */
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+/* tablet */
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .l-2 {
+    width: 16.66%;
+  }
+
+  .l-6 {
+    width: 50%;
+  }
+
+  .l-8 {
+    width: 66.66%;
+  }
+}
+
+/* phablet */
+
+@media (max-width: 767px) {
+  .m-2 {
+    width: 16.66%;
+  }
+
+  .m-3 {
+    width: 25%;
+  }
+
+  .m-8 {
+    width: 66.66%;
+  }
+
+  .m-10 {
+    width: 83.34%;
+  }
+}
+
+/* mobile */
+
+@media (max-width: 480px) {
+  /*  [class*='s-'],
+    [class*='m-'],
+    [class*='l-'],
+    [class*='xl-'] {
+        float: left;
+        padding: 16px 16px 0 16px; 
+    } 
+    
+    [class*='s-']:last-of-type,
+    [class*='m-']:last-of-type,
+    [class*='l-']:last-of-type,
+    [class*='xl-']:last-of-type {
+        padding-right: 16px;
+    }*/
+
+  .s-3 {
+    width: 25%;
+  }
+
+  .s-8 {
+    width: 66.66%;
+  }
+
+  .s-9 {
+    width: 75%;
+  }
+
+  .s-10 {
+    width: 83.34%;
+  }
+}
+
+/* jshint ignore:start */
+
+/* 4. Helpers
+ * - helper classes to simplify development
+ * - 10/07/2015 have removed all instances of !important for "better practice" 
+ *   and will have to test the classes throughout development
+ */
+
+.no-padding-bottom {
+  padding-bottom: 0;
+}
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+/*
+ * Clearfix: contain floats 
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+/* jshint ignore:end */
+
+/* jshint ignore:start */
+
+/* 3. Base Styles           
+ * - opinionated defaults
+ */
+
+html {
+  -webkit-text-size-adjust: none;
+  background: #f6f7f9;
+}
+
+h1,
+h2,
+p,
+a {
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 65px;
+  margin: 91px 0 10px 0;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 33px;
+  margin: 0 0 10px 0;
+  font-weight: 400;
+}
+
+p {
+  font-size: 20px;
+  line-height: 27px;
+  margin: 0;
+  font-weight: 300;
+}
+
+a {
+  font-size: 14px;
+  color: #4080ff;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+img {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+/* jshint ignore:end */
+
+.logo {
+  padding: 0 2% 2% 4%;
+}
+
+.total-price,
+.total {
+  font-weight: 600;
+}
+
+.disclaimer {
+  font-size: 12px;
+}
+
+/* phablet */
+
+@media (max-width: 767px) {
+  .s-offset-2 {
+    margin-left: 8.33%;
+  }
+
+  h1 {
+    margin: 75px 0 10px 0;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  a {
+    font-size: 14px;
+    line-height: 38px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+/* mobile */
+
+@media (max-width: 480px) {
+  .s-offset-2 {
+    margin-left: 8.33%;
+  }
+
+  h1 {
+    font-size: 26px;
+    line-height: 65px;
+    margin: 41px 0 10px 0;
+    font-weight: 300;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  a {
+    font-size: 12px;
+    line-height: 38px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
